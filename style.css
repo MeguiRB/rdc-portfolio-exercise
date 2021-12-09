@@ -149,7 +149,7 @@ h2 {
   width: 100%;
   border-radius: 50%; /* shape of a circle */
   border: 5px solid var(--color-primary);
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 .project-card {
