@@ -179,7 +179,7 @@ h2 {
 
 .project-card-text {
   margin: 20px 0;
-  min-height: 120px;
+  min-height: 120px; /* in case the content doesn't reach 5 lines, the space (element content height) remains the same*/
   /* show max of 5 lines: https://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css*/
   overflow: hidden;
   text-overflow: ellipsis;
