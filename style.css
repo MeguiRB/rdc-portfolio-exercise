@@ -131,6 +131,10 @@ h2 {
   margin: 0; /* it came with margin different on top and on the bottom -> couldn't center in .header-content */
 }
 
+.container {
+  padding: 0 60px;
+}
+
 .intro {
   display: flex;
   align-items: center;
