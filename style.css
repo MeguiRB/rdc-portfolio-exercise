@@ -130,7 +130,11 @@ h2 {
 }
 
 .header-content {
-  background-color: var(--color-primary);
+  /* element is fixed using position:sticky and top:0 */
+  position: sticky;
+  top: 0;
+  z-index: 7; /* the element is on the first layer*/
+  background: var(--color-primary);
   display: flex;
   justify-content: space-between; /* the elements go to the extremities */
   align-items: center;
