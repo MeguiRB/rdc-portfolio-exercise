@@ -255,8 +255,7 @@ h2 {
   position: fixed;
   bottom: 25px;
   right: 28px;
-  color: var(--color-primary);
-  background-color: var(--color-primary);
+  background-color: var(--color-text-primary);
 }
 
 .themeButton:hover {
