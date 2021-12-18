@@ -1,9 +1,18 @@
 /* Our default values set as CSS variables */
-:root {
+:root,
+html[data-theme="light"] {
   --color-bg: #f9faff;
-  --color-bg-secondary: #ffffff;
   --color-text-primary: #828282;
   --color-text-secondary: #333333;
+  --color-text-tertiary: #ffffff;
+  --color-primary: #928df1;
+  --color-secondary: #fdc435;
+}
+html[data-theme="dark"] {
+  --color-bg: #333333;
+  --color-text-primary: #f9faffe0;
+  --color-text-secondary: #e4e5eb;
+  --color-text-tertiary: #333333;
   --color-primary: #928df1;
   --color-secondary: #fdc435;
 }
@@ -20,11 +29,11 @@ ul li {
 }
 
 ul li a {
-  color: var(--color-bg);
+  color: var(--color-text-tertiary);
 }
 
 ul li a:hover {
-  color: var(--color-bg);
+  color: var(--color-text-tertiary);
 }
 
 ul {
@@ -110,6 +119,7 @@ h2 {
   box-shadow: 0px 11px 3px cornsilk;
   transform: translateY(-7px);
 }
+
 .instagram {
   background-image: url("assets/social/instagram.png");
 }
@@ -149,11 +159,11 @@ h2 {
 }
 
 .project-card {
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg);
   border-radius: 20px;
   overflow: hidden; /* for .project-card-image img to show the project-card borders */
   margin: 10px 0;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 40px rgba(112, 144, 176, 0.1);
 }
 
 .project-card-image {
@@ -197,7 +207,7 @@ h2 {
 
 .button-secondary,
 .button-secondary-rounded {
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-text-tertiary);
   border: 1px solid var(--color-primary);
   color: var(--color-primary) !important;
   /* important - For some reason the button-secondary-rounded didn't change color */
@@ -217,18 +227,18 @@ h2 {
 .button-secondary-rounded:hover {
   cursor: pointer;
   background-color: var(--color-primary);
-  color: var(--color-bg) !important;
+  color: var(--color-text-tertiary) !important;
 }
 
 .button-primary {
   border: none; /* submit button had borders */
   background-color: var(--color-secondary);
-  color: var(--color-text-secondary);
+  color: #000000;
 }
 
 .button-primary:hover {
   /*to know when you're hovering a button */
   cursor: pointer;
   filter: brightness(98%);
-  color: var(--color-text-secondary);
+  color: #000000;
 }
