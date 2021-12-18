@@ -243,3 +243,19 @@ h2 {
   filter: brightness(98%);
   color: #000000;
 }
+
+div.themeButton {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 28px;
+  color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+.themeButton:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
