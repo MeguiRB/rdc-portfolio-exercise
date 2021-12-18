@@ -116,7 +116,8 @@ h2 {
 }
 
 .social:hover {
-  box-shadow: 0px 11px 3px cornsilk;
+  filter: drop-shadow(0px 11px 3px cornsilk);
+  /*box-shadow: 0px 11px 3px cornsilk;*/
   transform: translateY(-7px);
 }
 
