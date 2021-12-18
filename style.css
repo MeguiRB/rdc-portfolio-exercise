@@ -195,12 +195,6 @@ h2 {
   font-weight: 500;
 }
 
-.button:hover {
-  /*to know when you're hovering a button */
-  cursor: pointer;
-  filter: brightness(98%);
-}
-
 .button-secondary,
 .button-secondary-rounded {
   background-color: var(--color-bg-secondary);
@@ -219,6 +213,13 @@ h2 {
   width: fit-content; /* the display: block made the width 100% */
 }
 
+.button-secondary:hover,
+.button-secondary-rounded:hover {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-bg) !important;
+}
+
 .button-primary {
   border: none; /* submit button had borders */
   background-color: var(--color-secondary);
@@ -226,5 +227,8 @@ h2 {
 }
 
 .button-primary:hover {
+  /*to know when you're hovering a button */
+  cursor: pointer;
+  filter: brightness(98%);
   color: var(--color-text-secondary);
 }
