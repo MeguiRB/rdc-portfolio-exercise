@@ -25,7 +25,7 @@ html[data-theme="dark"] {
 ul li {
   list-style-type: none;
   display: inline; /* list elements in the same line */
-  padding: 0 30px 0 0;
+  padding-right: 75px;
 }
 
 ul li a {
