@@ -5,16 +5,18 @@
 console.log("Hello 🌎");
 
 //Based on https://lukelowrey.com/css-variable-theme-switcher/
-document.documentElement.setAttribute("data-theme", "light");
 function changeTheme() {
   var button = document.getElementById("themeButton");
   var currentTheme = document.documentElement.getAttribute("data-theme");
   if (currentTheme === "light") {
     targetTheme = "dark";
-    button.setAttribute("class", "far fa-sun fa-2x themeButton");
+    button.setAttribute("class", "fas fa-sun fa-1x themeButton");
   } else {
     targetTheme = "light";
-    button.setAttribute("class", "far fa-moon fa-2x themeButton");
+    button.setAttribute("class", "fas fa-moon fa-1x themeButton");
   }
   document.documentElement.setAttribute("data-theme", targetTheme);
 }
+
+document.documentElement.setAttribute("data-theme", "dark");
+changeTheme();
