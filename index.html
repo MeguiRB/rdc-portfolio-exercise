@@ -35,13 +35,14 @@
 
     <!-- import the webpage's javascript file -->
     <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/145e46ba95.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div class="header-content">
-      <div class="header-logo">
-        <img src="assets/logo.png" alt="Logo Image" />
-      </div>
       <nav class="header-navigation">
         <ul class="header-links">
           <li><a href="#about">About</a></li>
@@ -49,6 +50,11 @@
           <li><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
+      <i
+        class="far fa-moon fa-2x themeButton"
+        id="themeButton"
+        onclick="changeTheme()"
+      ></i>
     </div>
     <!-- the wrapper and content divs set margins and positioning -->
     <div class="wrapper">
@@ -203,7 +209,6 @@
             </div>
           </div>
         </section>
-        <div class="themeButton" onclick="changeTheme()"></div>
       </div>
     </div>
     <!-- footer -->
